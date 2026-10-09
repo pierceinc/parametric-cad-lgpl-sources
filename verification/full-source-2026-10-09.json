@@ -1,0 +1,67 @@
+{
+  "completedAt": "2026-10-09T12:16:26.297Z",
+  "sourceManifestSha256": "873c478f382a2382f3089a0cb17048d0030eef930440684414787a95e467c206",
+  "sourceBasePath": "legal/sources/2026-10-08-873c478f382a",
+  "sourceArchives": {
+    "opencascade-replicad-0.23.0-complete-source.tar.gz": "252514c10f1fc775be7cb413751b1afbf938fce12ebf52796542a50bb13df7b8",
+    "planegcs-1.2.0-complete-source.tar.gz": "b49d49fd62b236eb4e6fb392b936e400c9b61bfe20ff1789b1c3093aa2e7f96d",
+    "BUILDING-AND-REPLACING.md": "e1c2ed5f6d342041efcd226c823914c17f464c6898e976acbb9a3d8e4f5256a8"
+  },
+  "rebuiltFiles": {
+    "planegcs.js": "5d5fe10097d757e7b4df2ee65f3804e3b32f9a09459b50634afe9a3bbc6b174d",
+    "planegcs.wasm": "5bec882aa7732943aa3e42003c4fca5896692eabfc25afb0094bf0d54e60fd6d",
+    "replicad_single.js": "15d3898086c4ae3dc37a437fadd6c24ff4a6603a018c10cd7596f866de5ad87f",
+    "replicad_single.wasm": "bff3be5c9ad98bfa485942042c265dafbb7aba9aad90b32d89c120a19a8af094"
+  },
+  "browserVerification": {
+    "verification": "Shipped worker with locally overridden matching JS/WASM pairs",
+    "hashes": {
+      "occtJs": "15d3898086c4ae3dc37a437fadd6c24ff4a6603a018c10cd7596f866de5ad87f",
+      "occtWasm": "bff3be5c9ad98bfa485942042c265dafbb7aba9aad90b32d89c120a19a8af094",
+      "planeJs": "5d5fe10097d757e7b4df2ee65f3804e3b32f9a09459b50634afe9a3bbc6b174d",
+      "planeWasm": "5bec882aa7732943aa3e42003c4fca5896692eabfc25afb0094bf0d54e60fd6d"
+    },
+    "intercepted": {
+      "occtJs": 1,
+      "occtWasm": 1,
+      "planeJs": 1,
+      "planeWasm": 1
+    },
+    "outcomes": [
+      {
+        "radius": 10,
+        "width": 20
+      },
+      {
+        "radius": 15,
+        "width": 30
+      }
+    ],
+    "exportBytes": 389636
+  },
+  "workerTests": 22,
+  "verificationCommand": "pnpm compliance:lgpl:verify",
+  "build": {
+    "dockerMemoryMiB": 12288,
+    "occtStandardBindings": 258,
+    "occtCppSources": 5387,
+    "occtSourceCompilationCacheReused": true,
+    "cacheAudit": {
+      "opencascade-replicad-0.23.0-complete-source.tar.gz": {
+        "regularFiles": 36830,
+        "changedSinceCompiledArchive": [
+          "opencascade-replicad-0.23.0-complete-source/BUILDING-AND-REPLACING.md"
+        ]
+      },
+      "planegcs-1.2.0-complete-source.tar.gz": {
+        "regularFiles": 14931,
+        "changedSinceCompiledArchive": [
+          "planegcs-1.2.0-complete-source/BUILDING-AND-REPLACING.md",
+          "planegcs-1.2.0-complete-source/planegcs/Dockerfile"
+        ]
+      }
+    },
+    "occtLink": "passed",
+    "planeGcsSourceBuild": "passed"
+  }
+}
